@@ -25,6 +25,9 @@ img{
 .col-4-6{
     width: calc((100%/6)*4);
 }
+.col-80{
+    width: 80%;
+}
 .col-100{
     width: 100%;
 }
@@ -47,13 +50,20 @@ img{
 .login{
     justify-content:flex-end;
 }
+/* Specific body style */
+.row.banner{
+    justify-content: center;
+}
 .bg-blu{
     background-color: blue;
 }
 .bg-pink{
     background-color: pink;
 }
-.col-100.bg-pink{
+.bg-violet{
+    background-color: violet;
+}
+.col-80.bg-violet{
     min-height: 300px;
     margin: 20px 0;
 }
