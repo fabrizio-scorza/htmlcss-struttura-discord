@@ -19,11 +19,20 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
+.row.reverse{
+flex-direction: row-reverse;
+}
 .col-1-6{
     width: calc(100%/6);
 }
 .col-4-6{
     width: calc((100%/6)*4);
+}
+.col-30{
+    width: 30%;
+}
+.col-70{
+    width: 70%;
 }
 .col-80{
     width: 80%;
@@ -33,7 +42,7 @@ img{
 }
 
 /* SPECIFIC STYLE */
-.head-section{
+.bg-gray{
     background-color: lightslategray;
 }
 .navbar{
@@ -50,6 +59,7 @@ img{
 .login{
     justify-content:flex-end;
 }
+
 /* Specific body style */
 .row.banner{
     justify-content: center;
@@ -63,13 +73,31 @@ img{
 .bg-violet{
     background-color: violet;
 }
+.bg-lightblu{
+    background-color: lightblue;
+}
+.bg-lightgray{
+    background-color: lightgray;
+}
+.bg-green{
+    background-color: green;
+}
+.col-80.bg-violet,.col-30.bg-pink,.col-70.bg-lightblu,.col-100.bg-green{
+    margin: 20px 0;
+}
 .col-80.bg-violet{
     min-height: 300px;
-    margin: 20px 0;
+}
+.col-30.bg-pink,.col-70.bg-lightblu{
+    min-height: 400px;
+}
+.col-100.bg-green{
+    min-height: 500px;
 }
 .section.bg-blu{
     border-bottom: 2px solid gray;
 }
+
 
 
 
