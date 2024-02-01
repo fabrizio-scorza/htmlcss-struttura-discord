@@ -103,6 +103,9 @@ flex-direction: row-reverse;
 .bg-darkcyan{
     background-color: darkcyan;
 }
+.bg-cyan{
+    background-color: cyan;
+}
 .col-80.bg-violet,.col-30.bg-pink,.col-70.bg-lightblu,.col-100.bg-green,{
     margin: 20px 0;
 }
@@ -114,6 +117,18 @@ flex-direction: row-reverse;
 }
 .col-100.bg-green{
     min-height: 500px;
+}
+.col-100.bg-cyan{
+    min-height:30px;
+}
+.border{
+    border-bottom: 2px  solid gray;
+}
+.button{
+    display: flex;
+    max-width: 70px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
