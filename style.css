@@ -1,0 +1,12 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin:0 auto;
+    padding: 0;
+}
+ul,ol,menu{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
