@@ -10,6 +10,8 @@ ul,ol,menu{
 img{
     max-width: 100%;
 }
+
+
 /* LAYOUT STYLE */
 .container{
     max-width: 1000px;
@@ -28,14 +30,14 @@ flex-direction: row-reverse;
 .col-1-3{
     width: calc(100%/3);
 }
-.col-1-4{
-    width:25%;
-}
 .col-2-3{
     width: calc((100%/3)*2);
 }
 .col-4-6{
     width: calc((100%/6)*4);
+}
+.col-25{
+    width:25%;
 }
 .col-30{
     width: 30%;
@@ -50,31 +52,10 @@ flex-direction: row-reverse;
     width: 100%;
 }
 
-/* SPECIFIC STYLE */
+
+/* BACKGROUND SECTION */
 .bg-gray{
     background-color: lightslategray;
-}
-.navbar{
-    background-color: orange;
-    min-height: 30px;
-}
-.logo, .link, .login{
-    display:flex;
-    align-items: center;
-}
-.link{
-    justify-content: center;
-}
-.login{
-    justify-content:flex-end;
-}
-
-/* Specific body style */
-.row.banner{
-    justify-content: center;
-}
-.section.bg-blu{
-    border-bottom: 2px solid gray;
 }
 .bg-blu{
     background-color: blue;
@@ -106,10 +87,39 @@ flex-direction: row-reverse;
 .bg-cyan{
     background-color: cyan;
 }
-.col-80.bg-violet,.col-30.bg-pink,.col-70.bg-lightblu,.col-100.bg-green{
+.bg-orange{
+    background-color: orange;  
+}
+
+
+/* SPECIFIC HEADER STYLE */
+
+.navbar{
+    min-height: 30px;
+}
+.logo, .link, .login{
+    display:flex;
+    align-items: center;
+}
+.link{
+    justify-content: center;
+}
+.login{
+    justify-content:flex-end;
+}
+
+
+/* SPECIFIC MAIN STYLE */
+.row.banner{
+    justify-content: center;
+}
+.section.bg-blu{
+    border-bottom: 2px solid gray;
+}
+.col-80.bg-violet, .col-30.bg-pink, .col-70.bg-lightblu, .col-100.bg-green{
     margin:20px 0px;
 }
-.col-80.bg-violet,.col-1-3.bg-darkpink,.col-1-4.bg-darkcyan{
+.col-80.bg-violet, .col-1-3.bg-darkpink, .col-25.bg-darkcyan{
     min-height: 300px;
 }
 .col-30.bg-pink,.col-70.bg-lightblu{
@@ -118,11 +128,12 @@ flex-direction: row-reverse;
 .col-100.bg-green{
     min-height: 500px;
 }
+
+/* SPECIFIC FOOTER STYLE */
 .col-100.bg-cyan{
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
-
     min-height:30px;
 }
 .border{
@@ -130,6 +141,9 @@ flex-direction: row-reverse;
 }
 .button{
     max-width: 70px;
+}
+.mb20{
+    margin-bottom: 20px;
 }
 
 
@@ -142,15 +156,15 @@ flex-direction: row-reverse;
 .debug .container{
         padding: 10px;
 }
-.debug .debugcol{
+.debug .column{
     border:2px dashed black;
     padding: 6px;
 }
-.col-2-3{
+.debug .col-2-3{
     border:2px dashed black;
     padding: 0;
 }
-.col-1-4.bg-darkcyan{
+.debug .col-25.bg-darkcyan{
     border: 2px dashed white;
     }
 
