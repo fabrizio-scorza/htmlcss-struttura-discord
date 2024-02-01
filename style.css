@@ -1,7 +1,7 @@
 /* RESET */
 *{
     box-sizing: border-box;
-    margin:0 auto;
+    margin: 0;
     padding: 0;
 }
 ul,ol,menu{
@@ -10,13 +10,46 @@ ul,ol,menu{
 img{
     max-width: 100%;
 }
-
-
-
-/* DEBUG RULES */
+/* LAYOUT STYLE */
 .container{
-        padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .row{
-    border:2px dashed black;
+    display: flex;
+    flex-wrap: wrap;
 }
+.col-1-6{
+    width: calc(100%/6);
+}
+.col-4-6{
+    width: calc((100%/6)*4);
+}
+
+/* SPECIFIC STYLE */
+.head-section{
+    background-color: lightslategray;
+}
+.navbar{
+    background-color: orange;
+    min-height: 30px;
+}
+.logo, .link, .login{
+    display:flex;
+    align-items: center;
+}
+.link{
+    justify-content: center;
+}
+.login{
+    justify-content:flex-end;
+}
+/* DEBUG RULES */
+.debug .container{
+        padding: 10px;
+}
+.debug .debugcol{
+    border:2px dashed black;
+    padding: 6px;
+}
+
